@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    max-width: 440px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #655E50;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.burger-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #655E50;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #655E50;
+    padding: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.slider {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    min-width: 100%;
+    scroll-snap-align: start;
+    padding: 20px 0;
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 65px;
+}
+
+h3 {
+    color: #655E50;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #655E50;
+}
+
+p{
+    color: #655E50;
+}
+
+.about__text {
+    padding-bottom: 20px;
+}
+
+.week {
+    background-color: #9E9884;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #343028;
+    border-radius: 10px 10px 0 0;
+}
+
+button {
+    background-color: #343028;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:focus {
+    background-color: #ffffff;
+    color: #343028;
+}
+
+footer {
+    text-align: center;
+    background-color: #655E50;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.footer__text {
+     color: white;
+}
+
+/* Личный кабинет */
+#profile {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+#booked-classes {
+    list-style-type: none;
+    padding: 0;
+}
+
+#booked-classes li {
+    background-color: #655E50;
+    margin: 10px 0;
+    padding: 16px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Оповещения */
+#notifications {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.notifications-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notifications-list li {
+    background-color: #655E50;
+    margin: 10px 0;
+    padding: 16px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+#classes-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#classes-list li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #655E50;
+    border-radius: 5px;
+}
+
+.book-class-btn {
+    background-color: #343028;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.book-class-btn:hover {
+    background-color: #ffffff;
+    color: #343028;
+}
+
+.day-schedule {
+    background-color: #9E9884;
+    padding: 16px;
+    color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+#courses {
+    background-color: #9E9884;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.courses__title {
+    color: #343028;
+    text-align: center;
+}
+
+input {
+    padding: 5px;
+    width: 130px;
+}
+
+.send-btn {
+    font-size: 12px;
+}
+
+.form-container {
+    padding: 70px 18px 0 ;
+}
+
+.classes {
+    display: flex;
+    gap: 15px;
+}
+
+.classes__colum {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

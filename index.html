@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фитнес-центр "Гармония"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="./resurs/image 1 (2).png" alt="">
+        </div>
+        <h1>Гармония</h1>
+        <div class="burger-menu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#aboutSlider">Слайдер</a></li>
+                <li><a href="#about">О фитнес-центре</a></li>
+                <li><a href="#directions">Направления</a></li>
+                <li><a href="#schedule">Расписание</a></li>
+                <li><a href="#trainers">Тренеры</a></li>
+                <li><a href="#courses">Курсы по тренерству</a></li>
+                <li><a href="#memberships">Абонементы</a></li>
+                <li><a href="#classes">Занятия</a></li>
+                <li><a href="#notifications">Оповещения</a></li>
+                <li><a href="#profile">Личный кабинет</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slider -->
+    <section class="slider" id="aboutSlider">
+        <div class="slide"><img src="./resurs/Group 3.png" alt=""></div>
+        <div class="slide"><img src="./resurs/Group 4.png" alt=""></div>
+        <div class="slide"><img src="./resurs/Group 6.png" alt=""></div>
+    </section>
+
+    <!-- О фитнес-центре -->
+    <section id="about">
+        <h2>О фитнес-центре</h2>
+        <p class="about__text">«Гармония» — это место, где забота о теле и духе сочетается с профессиональным подходом и вниманием к каждому клиенту.</p>
+        <p>Фитнес-центр «Гармония» — это идеальное пространство для тех, кто стремится поддерживать физическое и эмоциональное равновесие. В «Гармонии» предлагается широкий спектр услуг для укрепления тела и расслабления разума, включая занятия йогой, пилатесом, флай-йогой, а также профессиональный массаж.</p>
+    </section>
+
+    <!-- Направления -->
+    <section id="directions">
+        <h2>Наши направления</h2>
+        <div class="slider" id="directionsSlider">
+            <div class="slide"><img src="./resurs/Group 8.png" alt=""></div>
+            <div class="slide"><img src="./resurs/Group 9.png" alt=""></div>
+            <div class="slide"><img src="./resurs/Group 10.png" alt=""></div>
+            <div class="slide"><img src="./resurs/Group 11 (1).png" alt=""></div>
+            <div class="slide"><img src="./resurs/Group 12 (1).png" alt=""></div>
+        </div>
+    </section>
+
+    <!-- Расписание -->
+    <section id="schedule">
+        <h2>Расписание и запись онлайн</h2>
+        <div class="week">
+            <button data-day="Понедельник">Пн</button>
+            <button data-day="Вторник">Вт</button>
+            <button data-day="Среда">Ср</button>
+            <button data-day="Четверг">Чт</button>
+            <button data-day="Пятница">Пт</button>
+            <button data-day="Суббота">Сб</button>
+            <button data-day="Воскресенье">Вс</button>
+        </div>
+        <div class="day-schedule">
+            <h3 id="selected-day"></h3>
+            <ul id="classes-list">
+                <!-- Здесь появятся занятия на выбранный день -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Личный кабинет -->
+    <section id="profile">
+        <h2>Личный кабинет</h2>
+        <div class="profile-info">
+            <h3>Мои записи</h3>
+            <ul id="booked-classes">
+                <!-- Здесь будут отображаться записанные занятия -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Оповещения -->
+    <section id="notifications">
+        <h2>Оповещения</h2>
+        <ul class="notifications-list">
+            <li>Скидка 10% на первое занятие!</li>
+            <li>Новое расписание доступно с 15 октября.</li>
+        </ul>
+    </section>
+
+    <!-- Тренеры -->
+    <section id="trainers">
+        <h2>Наши тренеры</h2>
+        <div class="slider" id="trainersSlider">
+            <div class="slide"><img src="./resurs/Group 16 (1).png" alt=""></div>
+            <div class="slide"><img src="./resurs/Group 15 (2).png" alt=""></div>
+            <div class="slide"><img src="./resurs/Group 14 (1).png" alt=""></div>
+            <div class="slide"><img src="./resurs/Group 13 (1).png" alt=""></div>
+        </div>
+    </section>
+
+    <!-- Курсы по тренерству -->
+    <section id="courses">
+        <h2 class="courses__title">Курсы по тренерству</h2>
+        <div class="form-container" id="courseForm">
+            <input type="text" placeholder="Номер телефона">
+            <button class="send-btn">Узнать подробнее и Записаться</button>
+        </div>
+    </section>
+
+    <!-- Абонементы -->
+    <section id="memberships">
+        <h2>Абонементы</h2>
+        <div class="membership-option"><img src="./resurs/Group 17.png" alt=""></div>
+        <div class="membership-option"><img src="./resurs/Group 18.png" alt=""></div>
+        <div class="membership-option"><img src="./resurs/Group 19.png" alt=""></div>
+    </section>
+
+    <!-- Наши занятия -->
+    <section id="classes">
+        <h2>Наши занятия</h2>
+        <div class="classes">
+            <div class="class"><img src="./resurs/image (12).png" alt=""></div>
+            <div class="classes__colum">
+                <div class="class"><img src="./resurs/image (13).png" alt=""></div>
+                <div class="class"><img src="./resurs/image (14).png" alt=""></div>
+                <div class="class"><img src="./resurs/image (15).png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p class="footer__text">@Официально "Гармония"</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
